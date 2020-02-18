@@ -1,6 +1,5 @@
 
 # kind-istio-test-env
------
 
 ## Prereqs
 You need to configure dedicated network interface to connect from local machine to Istio on Kind.  
