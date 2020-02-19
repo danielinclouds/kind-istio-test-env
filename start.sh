@@ -9,7 +9,8 @@ kind create cluster
 # Install Istio
 kubectl create ns istio-system
 istioctl manifest apply \
-    --set profile=default
+    --set profile=default \
+    --set values.prometheus.enabled=false
 
 kubectl label namespace default istio-injection=enabled
 
