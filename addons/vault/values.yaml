@@ -1,0 +1,3 @@
+
+unsealer:
+  args: ["--mode", "k8s", "--k8s-secret-namespace", "vault", "--k8s-secret-name", "bank-vaults"]
