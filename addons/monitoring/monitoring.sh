@@ -10,6 +10,9 @@ helm upgrade prometheus stable/prometheus \
     --set nodeExporter.enabled=false \
     --set alertmanager.enabled=false \
     --set pushgateway.enabled=false \
+    --set server.global.scrape_interval=10s \
+    --set server.global.scrape_timeout=5s \
+    --set server.global.evaluation_interval=10s \
     --values ./prometheus-values.yaml
 
 
